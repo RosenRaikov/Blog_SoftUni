@@ -1,0 +1,520 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    float: right;
+    width: 80%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+body{
+    background-color: #eef9f9;;
+}
+
+body>header {
+    background: lightblue;
+    padding: 5px;
+}
+
+body>header>a>img, body>header a  {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px 5px;
+    font-size: 1.2em;
+}
+
+body>footer {
+    background: #eee;
+    padding: 5px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+table th, table td {
+    background: lightblue;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+ul#messages li {
+    display: block;
+    width: 80%;
+    margin: 5px auto;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+ul#messages li.info {
+    background: #7f7;
+}
+
+ul#messages li.error {
+    background: #d00;
+    color: white;
+}
+
+.validation-error {
+    vertical-align: top;
+    margin-left: 10px;
+    color: red;
+}
+
+#logged-in-info {
+    float: right;
+    margin-top: 18px;
+}
+
+#logged-in-info form {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+body>aside {
+    float: left;
+    width: 20%;
+    height: 100%;
+    background-color: #06afc0;
+    color: white;
+    font: 32px TimesNewRoman;
+    font-weight: 100;
+    text-align: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+body>aside h2 {
+    margin: 5px 0px 15px 0px;
+}
+
+.menu-elements:hover{
+    font-weight: 900;
+    background-color: lightblue;
+    height: 40px;
+    line-height: 32px;
+    transition: background 0.5s ease, padding 0.5s linear;
+}
+.menu-elements{
+    padding: 10px;
+}
+.menu-link{
+    text-decoration: none;
+    color: white;
+    -moz-transition-property: font-weight;
+    -moz-transition-duration: 3ms;
+    -moz-transition-timing-function: linear;
+    -moz-transition-delay: 2.5ms;
+    -webkit-transition-property: font-weight;
+    -webkit-transition-duration: 3ms;
+    -webkit-transition-timing-function: linear;
+    -webkit-transition-delay: 2.5ms;
+    font-weight: 300;
+}
+.menu-link:hover{
+    font-weight: 900;
+    transition: background 0.7s ease,
+    padding 0.5s linear;
+}
+
+.rp-title{
+    font: 32px TimesNewRoman;
+    font-weight: 600;
+}
+
+.recent-post{
+    padding: 10px;
+    font-size: 18px;
+}
+.recent-post:hover{
+    font-weight: 900;
+    transition: background 0.7s ease,
+    padding 0.5s linear;
+}
+.recent-post-link{
+    text-decoration: none;
+    color: white;
+}
+body>main:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.logo {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+hr {
+    color: rgba(255, 255, 255, 0.5);
+    margin: 15px auto;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 60%;
+}
+
+.main{
+    margin: 0 auto;
+    min-height: inherit;
+    width: 80%;
+    position: relative;
+    float: right;
+}
+.header{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    float: right;
+}
+.img {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px 5px;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.blog-title{
+    font: 54px Arial;
+    font-weight: 600;
+    margin: 0 auto 50px;
+    color: #565656;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 8px solid #019c8c;
+    text-decoration: none;
+}
+
+.hello-user{
+    text-align: center;
+    border-bottom: 3px solid #019c8c;
+    text-decoration: none;
+    border-left: 3px solid #019c8c;
+    font-weight: 600;
+    margin: 0 auto 50px;
+    color: #565656;
+    font-size: 18px;
+}
+
+.title{
+    font: 32px Oswald;
+    font-weight: 600;
+}
+
+#posts{
+    display: block;
+}
+.dot{
+    margin-top: 13px;
+    margin-right: 10px;
+    float: left;
+    width: 20px;
+    background-color: #06afc0;
+    margin-left: 25px;
+}
+
+main>article>p{
+    margin-bottom: 5px;
+    padding-top: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 80%;
+    margin-left: 3%;
+    word-wrap: break-word;
+}
+
+.date{
+    margin-bottom: 5px;
+    padding-top: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 80%;
+    margin-left: 3%;
+    word-wrap: break-word;
+    margin-left: 5%;
+}
+
+main{
+    color: #565656;
+}
+
+main>article>p>b>a{
+    color: #565656;
+}
+
+.register{
+    float: right;
+    width: 80%;
+    text-align: center;
+}
+
+.login{
+    float: right;
+    width: 80%;
+    text-align: center;
+}
+
+.new-post{
+    background: #dadada;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    float: right;
+}
+
+.post-form{
+    background: #f2f2f2;
+    margin: 10px;
+}
+
+.post-elements{
+    display: inline-block;
+    width: 40%;
+    padding-top: 10px;
+}
+
+.content-field {
+    resize: none;
+    border: 3px solid #f2f2f2;
+    outline: none;
+    width: 550px;
+    height: 300px;
+    border-radius: 15px;
+    text-align: left;
+    font: 12px Lato-Light;
+    padding: 10px;
+}
+
+.content-field:focus {
+    font: 12px Lato;
+    font-weight: 100;
+    outline: none;
+    border: 3px solid #06c0ab;
+}
+
+.view-post{
+    border-collapse: collapse;
+    border-spacing: 0;
+    float: right;
+    width: 80%;
+}
+
+#posts article {
+    float: right;
+    width: 80%;
+}
+
+#posts article p.comment {
+    border:1px solid #ccc; box-sizing: border-box; padding: 10px; background: #fff;
+}
+
+#posts article.comments form:before {
+    content: ""; display: table; clear: both;
+}
+
+#posts article.comments form {
+    margin-top: 40px; border-top: 1px solid #ccc; padding-top: 30px;
+}
+
+#posts article.comments form p {
+    width: 100%; display: block; padding-left: 30px; padding-right: 30px; vertical-align: top; margin-bottom: 20px;
+    position: relative; padding-left: 20%;
+}
+
+#posts article.comments form p label {
+    font-weight: bold; position: absolute; top: 10px; left: 0px; right: 84%; text-align: right; padding-right: 20px; box-sizing: border-box;
+}
+
+#posts article.comments form textarea {
+    margin-left: 20px; min-width: 60%;
+}
+
+.button a{
+    border-bottom: 1px solid #777777;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #333333;
+    border-top: 1px solid #000000;
+    color: #000000;
+    display: block;
+    height: 20px;
+    padding: 0 1em;
+    width: 5em;
+    text-decoration: none;
+    text-align: center;
+    background: #06afc0;
+}
+
+.button a:hover{
+    font-weight: 900;
+    transition: background 0.7s ease,
+    padding 0.5s linear;
+    background: lightblue;
+}
+
+.comments-label{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    padding: 10px;
+    border-bottom: 1px dashed darkgray;
+    border-top: 1px dashed darkgray;
+    margin-top: 20px;
+
+}
+
+.edit{
+    float: right;
+    width: 78%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    box-sizing: content-box;
+}
+.edit div{
+    margin: 5px;
+}
+
+.delete{
+    float: right;
+    width: 78%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    box-sizing: content-box;
+}
+.delete div{
+    margin: 5px;
+}
